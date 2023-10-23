@@ -24,10 +24,13 @@ h2 {
   color: white;
   -webkit-text-stroke: 1px black;
 }
-
+#buttondiv {
+  text-align: center;
+}
 #start {
     text-align: center;
     font-size: 30px;
+  
 }
 
 #timer{
@@ -40,7 +43,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  /*cursor: url('./assets/mallet.png'), pointer;*/
+  cursor: url('/assets/mallet.png'), pointer;
 }
 
 .hole {
