@@ -250,7 +250,7 @@ moles.forEach(moleListener);
 }
 
 function cursorAnimation() {
-  document.body.style.cursor = url('/assets/cat-paw2.png'), pointer;
+  document.body.style.cursor = url('assets/cat-paw2.png'), pointer;
 }
 
 
