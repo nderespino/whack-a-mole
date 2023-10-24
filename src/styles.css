@@ -8,7 +8,7 @@ html {
   background-size: cover;
   z-index:0;
   overflow: hidden;
-  cursor: url('assets/cat-paw.png'), pointer;
+  cursor: url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw.png'), pointer;
 }
 
 h1 {
