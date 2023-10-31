@@ -225,6 +225,7 @@ function whack(event) {
   // TODO: Write your code here.
   updateScore();
   cursorAnimation();
+  cursorReset();
   return points;
 }
 
@@ -252,15 +253,16 @@ moles.forEach(moleListener);
 function cursorAnimation() {
   let body = document.getElementsByTagName("body")[0];
 
- body.style.cursor= "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw2.png'), auto";
+ body.style.cursor= "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw3.png'), auto";
  
- setTimeout(() => {
-  body.style.cursor = "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw2.png'), auto";
  
- }, 300);
 };
 
+function cursorReset() {
+  let body = document.getElementsByTagName("body")[0];
 
+  body.style.cursor= "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw.png'), auto";
+}
 /**
 *
 * This function sets the duration of the game. The time limit, in seconds,
