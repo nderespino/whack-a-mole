@@ -139,7 +139,8 @@ function showAndHide(hole, delay){
     // TODO: call the toggleVisibility function so that it removes the 'show' class when the timer times out.
     toggleVisibility(hole);
     gameOver();
-  }, delay); // TODO: change the setTimeout delay to the one provided as a parameter
+  }, delay);
+   // TODO: change the setTimeout delay to the one provided as a parameter
   return timeoutID;
 }
 
@@ -238,7 +239,6 @@ function setEventListeners(){
   function moleListener(mole) {
    // if (clicked) {
     mole.addEventListener('click', whack,{once : true});
-    
     //clicked = false;
    // }
  // else 
@@ -250,8 +250,15 @@ moles.forEach(moleListener);
 }
 
 function cursorAnimation() {
-  document.body.style.cursor = "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw2.png'), pointer;"
-}
+  let body = document.getElementsByTagName("body")[0];
+
+ body.style.cursor= "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw2.png'), auto";
+ 
+ setTimeout(() => {
+  body.style.cursor = "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw2.png'), auto";
+ 
+ }, 300);
+};
 
 
 /**

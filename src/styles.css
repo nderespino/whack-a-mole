@@ -1,6 +1,6 @@
 html {
   /*background: url('./assets/background.png') no-repeat center center fixed;*/
-  background: url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/background.png?raw=true') no-repeat center center fixed;
+  background: url(/assets/farm-background2.png) no-repeat center center fixed;
   box-sizing: border-box;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,22 +8,26 @@ html {
   background-size: cover;
   z-index:0;
   overflow: hidden;
+  font-family: 'Days One', sans-serif;
+
+}
+body{
   cursor: url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw.png'), pointer;
 }
-
 h1 {
   text-align: center;
   font-size: 90px;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: white;
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 2px #C8553D;
 }
+
+
 
 h2 {
   text-align: center;
   font-size: 40px;
   color: white;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px #C8553D;
 }
 #buttondiv {
   text-align: center;
@@ -40,10 +44,13 @@ h2 {
 
 .grid {
   width: 600px;
-  height: 400px;
+  height: 600px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  background: url(/assets/dirtbackground.png);
+  border-radius: 10px;
+  border: 10px solid #fff;
 }
 
 .hole {
@@ -55,7 +62,7 @@ h2 {
 .hole:after {
   display: block;
   /*background: url("./assets/hole.png") bottom center no-repeat;*/
-  background: url("https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/hole.png?raw=true") bottom center no-repeat;
+  background: url(/assets/hole-2.png) bottom center no-repeat;
   background-size:contain;
   content:'';
   width: 100%;
