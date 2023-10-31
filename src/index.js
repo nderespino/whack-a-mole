@@ -225,7 +225,7 @@ function whack(event) {
   // TODO: Write your code here.
   updateScore();
   cursorAnimation();
-  cursorReset();
+  
   return points;
 }
 
@@ -258,11 +258,7 @@ function cursorAnimation() {
  
 };
 
-function cursorReset() {
-  let body = document.getElementsByTagName("body")[0];
 
-  body.style.cursor= "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw.png'), auto";
-}
 /**
 *
 * This function sets the duration of the game. The time limit, in seconds,
