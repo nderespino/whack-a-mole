@@ -12,7 +12,7 @@ html {
 
 }
 body{
-  cursor: url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw.png'), pointer;
+  cursor: url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw.png'), auto;
 }
 h1 {
   text-align: center;
@@ -35,6 +35,8 @@ h2 {
 #start {
     text-align: center;
     font-size: 30px;
+    font-family: "Days One";
+    
   
 }
 
@@ -68,22 +70,23 @@ h2 {
   width: 100%;
   height: 100%;
   position: absolute;
-  bottom: -40%;
+  bottom: -30%;
   z-index: 2;
   pointer-events:none;
 }
 
 .mole {
   /*background:url('./assets/mole.png') bottom center no-repeat;*/
-  background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;
-  background-size: 60%;
+  background:url('/assets/mole2.png') bottom center no-repeat;
+  background-size: 80%;
   position: absolute;
-  top: 100%;
+  top: 80%;
   width: 100%;
   height: 100%;
   /*transition: transform 0.5s;*/
   transition: all 1s;
   pointer-events:auto;
+  
 }
 
 .hole.show .mole {
