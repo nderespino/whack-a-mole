@@ -33,11 +33,32 @@ h2 {
   text-align: center;
 }
 #start {
-    text-align: center;
-    font-size: 30px;
-    font-family: "Days One";
-    
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #C8553D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #80636e;
   
+  font-family: "Days One";
+    cursor: url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw.png'), auto;
+ 
+   
+}
+
+button:hover {
+  background-color: white;
+
+}
+
+button:active {
+  transform: translateY(4px);
 }
 
 #timer{

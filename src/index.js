@@ -224,6 +224,7 @@ function startTimer() {
 function whack(event) {
   // TODO: Write your code here.
   updateScore();
+  cursorAnimation();
   return points;
 }
 
@@ -248,16 +249,16 @@ moles.forEach(moleListener);
     return moles;
 }
 
-// function cursorAnimation() {
-//   let body = document.getElementsByTagName("body")[0];
+ function cursorAnimation() {
+   let body = document.getElementsByTagName("body")[0];
 
-//  body.style.cursor= "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw3.png'), auto";
+  body.style.cursor= "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw3.png'), auto";
  
-//  setTimeout(() => {
-//   body.style.cursor = "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw3.png'), auto";
+  setTimeout(() => {
+   body.style.cursor = "url('https://raw.githubusercontent.com/nderespino/whack-a-mole/main/assets/cat-paw.png'), auto";
  
-//  }, 300);
-// };
+  }, 300);
+ };
 
 
 /**
